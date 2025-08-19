@@ -1,0 +1,15 @@
+.env
+venv/
+env/
+__pycache__
+migrations
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+/media/
+
+node_modules/
+dist/
+.vite/
+.env
