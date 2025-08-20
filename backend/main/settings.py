@@ -62,12 +62,12 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://wmerch-django-react-typescript-production.up.railway.app"
+    "https://wmerch-django-react-typescript-production.up.railway.app/"
 ]
 
 CRSF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
-    "https://wmerch-django-react-typescript-production.up.railway.app"
+    "https://wmerch-django-react-typescript-production.up.railway.app/"
 ]
 
 REST_FRAMEWORK = {
