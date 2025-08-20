@@ -6,7 +6,7 @@ import verticalBanner from "../../assets/portada_420_vertical_1296x.webp";
 import { Flame } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export default function BgInitial() {
+const BgInitial: React.FC = () => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
@@ -67,3 +67,6 @@ export default function BgInitial() {
     </div>
   );
 }
+
+
+export default BgInitial;

@@ -15,7 +15,7 @@ import {
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Product = () => {
+const Product: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const { getMerch } = useMerchContext();
 
@@ -33,7 +33,7 @@ const Product = () => {
         <div className="bg-black text-white py-12 px-4">
             <div className="max-w-4xl w-full mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-[65%_40%] gap-12 mt-12 items-start">
-                    {dataMerch && Array.isArray(dataMerch?.images) && (
+                    {dataMerch && (
                         <div className="order-1 md:order-none">
                             <Carousel
                                 opts={{
@@ -42,8 +42,7 @@ const Product = () => {
                                 className="w-full"
                             >
                                 <CarouselContent>
-
-                                    {dataMerch?.images.map((img: ProductImage, index: number) => (
+                                    {dataMerch?.flatMap((product) => product.images ?? []).map((img: ProductImage, index: number) => (
                                         <CarouselItem key={index} className="">
                                             <div className="rounded-md border border-neutral-600 bg-black">
                                                 <Card>
@@ -79,8 +78,8 @@ const Product = () => {
                     )}
                     <div className="flex flex-col h-full text-left font-libre mt-8 md:mt-0">
                         <p className="text-lg extrelight">W Merch</p>
-                        <h1 className="md:text-5xl text-4xl font-bold italic mt-2">{dataMerch?.name}</h1>
-                        <p className="mt-6 text-2xl font-semibold">{`$${Number(dataMerch?.price).toLocaleString("en-US")}`}</p>
+                        <h1 className="md:text-5xl text-4xl font-bold italic mt-2">{dataMerch?.[0].name}</h1>
+                        <p className="mt-6 text-2xl font-semibold">{`$${Number(dataMerch?.[0].price).toLocaleString("en-US")}`}</p>
                         <p className="mt-4 text-lg font-light font-libre italic">Impuesto incluído.</p>
                         <div className="hidden md:block mt-auto mb-6">
                             <Link

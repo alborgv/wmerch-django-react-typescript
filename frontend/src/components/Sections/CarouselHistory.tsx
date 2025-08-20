@@ -8,7 +8,7 @@ const images = import.meta.glob("../../assets/history/*.{png,jpg,jpeg,avif,webp}
         as: "url",
     })
 
-const CarouselHistory = () => {
+const CarouselHistory: React.FC = () => {
     
 
       const imageUrls = Object.values(images)

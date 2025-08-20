@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const ProductCard: React.FC<ProductCardProps> = ({ id, image, name, price, width, height, size }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ id, image, name, price, size }) => {
     
     return (
         <div

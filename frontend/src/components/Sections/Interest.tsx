@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const Interest = () => {
+const Interest: React.FC = () => {
 
     const { id } = useParams<{ id: string }>();
     const { getAllMerch } = useMerchContext();

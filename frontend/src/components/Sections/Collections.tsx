@@ -1,13 +1,12 @@
 import React from "react";
 
-// import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useMerchContext } from "../../context/MerchContext";
 
 import ProductCard from "../Card/ProductCard";
 import { motion } from "framer-motion";
 
-const Collections = () => {
+const Collections: React.FC = () => {
 
     const { getAllMerch } = useMerchContext();
 

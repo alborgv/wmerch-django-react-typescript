@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useState, useRef, useEffect } from "react";
 import Logo from "../../assets/Logo_W_Merch_cropped_400x@2x.png";
 import { Menu, X, Search, Home, ShoppingBag, Phone } from "lucide-react";

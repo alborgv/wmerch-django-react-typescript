@@ -8,7 +8,7 @@ import fotoPerfilMorada from "../../assets/foto_perfil_morada_750x.jpg";
 import fotoPerfilRoja from "../../assets/foto_perfil_roja_750x.jpg";
 import { Link } from "react-router-dom";
 
-const Destacado = () => {
+const Destacado: React.FC = () => {
     return (
         <div className="bg-gradient-to-b from-neutral-900 to-black text-white min-h-screen p-10">
             <motion.div
