@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'main.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv("PG_DATABASE_URL")
+        default=os.getenv("DATABASE_URL")
     )
 }
 
