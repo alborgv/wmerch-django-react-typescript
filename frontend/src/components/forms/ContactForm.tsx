@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useMerchContext } from "context/MerchContext";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { useState } from "react";

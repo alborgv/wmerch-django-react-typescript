@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
 import { useMerchContext } from "../../context/MerchContext";
 import { Link, useParams } from "react-router-dom";

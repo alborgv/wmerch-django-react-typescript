@@ -1,3 +1,5 @@
+import React from "react";
+
 import ProductCard from "components/Card/ProductCard";
 import { useMerchContext } from "context/MerchContext";
 import { ArrowLeft } from "lucide-react";

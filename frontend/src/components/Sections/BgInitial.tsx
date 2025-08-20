@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
 import horizontalBanner from "../../assets/portada_420_horizontal_3024x.jpg";
 import verticalBanner from "../../assets/portada_420_vertical_1296x.webp";
