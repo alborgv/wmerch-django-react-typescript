@@ -19,12 +19,11 @@ const Product: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const { getMerch } = useMerchContext();
 
-    const [dataMerch, setMerch] = useState<ProductType[]>([]);
+    const [dataMerch, setMerch] = useState<ProductType>();
 
     useEffect(() => {
         const fetchMerch = async () => {
             const res = await getMerch(id || "");
-            console.log("RES:", res)
             setMerch(res)
         }
         fetchMerch();
@@ -43,7 +42,7 @@ const Product: React.FC = () => {
                                 className="w-full"
                             >
                                 <CarouselContent>
-                                    {Array.isArray(dataMerch) && dataMerch?.flatMap((product) => product.images ?? []).map((img: ProductImage, index: number) => (
+                                    {dataMerch?.images?.map((img: ProductImage, index: number) => (
                                         <CarouselItem key={index} className="">
                                             <div className="rounded-md border border-neutral-600 bg-black">
                                                 <Card>
@@ -77,10 +76,10 @@ const Product: React.FC = () => {
                         </div>
 
                     )}
-                    <div className="flex flex-col h-full text-left font-libre mt-8 md:mt-0">
+                    <div className="flex flex-col h-full text-left font-libre">
                         <p className="text-lg extrelight">W Merch</p>
-                        <h1 className="md:text-5xl text-4xl font-bold italic mt-2">{dataMerch?.[0]?.name}</h1>
-                        <p className="mt-6 text-2xl font-semibold">{`$${Number(dataMerch?.[0]?.price).toLocaleString("en-US")}`}</p>
+                        <h1 className="md:text-5xl text-4xl font-bold italic mt-2">{dataMerch?.name}</h1>
+                        <p className="mt-6 text-2xl font-semibold">{`$${Number(dataMerch?.price).toLocaleString("en-US")}`}</p>
                         <p className="mt-4 text-lg font-light font-libre italic">Impuesto incluído.</p>
                         <div className="hidden md:block mt-auto mb-6">
                             <Link
