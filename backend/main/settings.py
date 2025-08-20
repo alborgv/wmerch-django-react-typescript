@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "wmerch-django-react-typescript-production.up.railway.app"]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
 
 SITE_URL='http://localhost:5173/'
@@ -59,15 +59,9 @@ CLOUDINARY_STORAGE = {
 MEDIA_URL = "/media/"
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "https://wmerch-django-react-typescript-production.up.railway.app"
-]
+CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "").split(",")
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:5173",
-    "https://wmerch-django-react-typescript-production.up.railway.app"
-]
+CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': (
