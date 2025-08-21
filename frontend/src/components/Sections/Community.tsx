@@ -6,7 +6,7 @@ import imgRight from "../../assets/wcom2.webp";
 
 const Community: React.FC = () => {
   return (
-    <div className="bg-black text-white w-full mx-auto min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 overflow-x-hidden">
+    <div className="bg-black text-white w-full mx-auto min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-24 overflow-x-hidden">
       <div className="relative flex justify-center items-center w-full md:w-1/2 h-[400px] md:h-[500px]">
         <motion.img
           src={imgRight}

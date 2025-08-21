@@ -49,7 +49,7 @@ export default function Navbar() {
   }, [searchTerm, dataMerch]);
 
   return (
-    <nav className="shadow-sm w-full sticky top-0 z-50 md:relative">
+    <nav className="shadow-sm w-full fixed top-0 z-50 md:relative">
       <div className="bg-black px-6 md:px-24 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img src={Logo} alt="Logo" className={`h-8 inline ${isVisible ? "hidden" : ""}`} />
