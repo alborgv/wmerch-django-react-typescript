@@ -57,10 +57,10 @@ const BgInitial: React.FC = () => {
         
         <div className="absolute inset-0 flex justify-between items-end p-4">
           <h1 className="text-white text-3xl font-bold">SPECIAL 4:20 2.0</h1>
-            <button className="flex items-center gap-2 bg-black/80 border border-green-600 text-green-500 hover:bg-green-700 hover:text-slate-200 px-5 py-2 rounded-full font-extrabold text-sm uppercase tracking-wide shadow-[0_4px_10px_rgba(0,255,60,0.3)] hover:shadow-[0_0_15px_rgba(0,255,60,0.5)] transition-all duration-300">
-              <Flame className="w-4 h-4" />
-              W Merch Disponible
-            </button>
+            <Link to="/collections" className="flex items-center gap-2 bg-black/80 border border-green-600 text-green-500 hover:bg-green-700 hover:text-slate-200 px-2 py-2 text-center rounded-full font-extrabold text-sm uppercase tracking-wide shadow-[0_4px_10px_rgba(0,255,60,0.3)] hover:shadow-[0_0_15px_rgba(0,255,60,0.5)] transition-all duration-300">
+              <Flame className="w-8 md:w-4 h-8 md:h-4 ml-3" />
+                W Merch Disponible
+            </Link>
           
         </div>
       </div>

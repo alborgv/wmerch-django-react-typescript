@@ -26,7 +26,7 @@ const Interest: React.FC = () => {
     return (
         <div className="bg-black text-white">
             
-            <h1 className="font-libre text-4xl font-bold italic text-center mt-6">TE PUEDE INTERESAR</h1>
+            <h1 className="font-robotoCondensed text-3xl font-bold italic text-center mt-6">TE PUEDE INTERESAR</h1>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-12 max-w-full px-4 md:px-48 py-8" onClick={() => window.location.reload()}>
                 {dataMerch.map((item) => (

@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
                     whileInView={{ y: -40, opacity: 1 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="mb-14">
-                    <h2 className="text-3xl font-anton font-semibold mb-8">Únete a la familia</h2>
+                    <h2 className="text-3xl font-robotoCondensed font-semibold mb-8">Únete a la familia</h2>
                     <div className="flex flex-col items-center space-y-2">
                         <form className="flex items-center border-b border-white w-full max-w-sm justify-between px-2 pb-1" onSubmit={handleSubmit}>
                                 <input

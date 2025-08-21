@@ -21,7 +21,7 @@ const CarouselHistory: React.FC = () => {
             initial={{ y: 20, opacity: 0.2 }}
             whileInView={{ y: -20, opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="text-white text-center font-libre font-light text-2xl mb-10">HISTORIAL PIEZAS DE COLECCIÓN</motion.h1>
+            className="text-white text-center font-robotoCondensed italic font-semibold text-3xl mb-10">HISTORIAL PIEZAS DE COLECCIÓN</motion.h1>
             <Marquee gradient={false} speed={60}>
             {imageUrls.map((url, index) => (
         <img

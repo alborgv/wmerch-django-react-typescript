@@ -1,3 +1,4 @@
+import os
 import stripe
 from django.conf import settings
 from django.shortcuts import redirect
@@ -15,7 +16,7 @@ from .filters import *
 
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
-API_URL="http://locahost:8000/api"
+API_URL = os.environ.get("API_URL")
 
 class PaymentListView(generics.ListAPIView):
     queryset = Payment.objects.all()

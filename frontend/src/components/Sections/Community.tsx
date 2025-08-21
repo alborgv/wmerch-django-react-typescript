@@ -34,7 +34,7 @@ const Community: React.FC = () => {
           initial={{ y: 80, opacity: 0.2 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-5xl font-bold italic">
+          className="text-5xl md:text-4xl font-robotoCondensed font-bold italic">
           W MERCH COMMUNITY
         </motion.h2>
       </div>

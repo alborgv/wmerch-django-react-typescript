@@ -24,8 +24,8 @@ const Collections: React.FC = () => {
     return (
         <div className="bg-black text-white py-12 px-4">
             <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-5xl font-semibold font-libre italic">CATÁLOGO</h1>
-                <h2 className="text-xl mt-2">DISPONIBLES A LA VENTA</h2>
+                <h1 className="text-5xl font-semibold font-robotoCondensed italic">CATÁLOGO</h1>
+                <h2 className="text-xl mt-2 font-robotoCondensed">DISPONIBLES A LA VENTA</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 px-12 md:px-none gap-12 max-w-full mt-12">
 
                     {dataMerch.map((item) => (

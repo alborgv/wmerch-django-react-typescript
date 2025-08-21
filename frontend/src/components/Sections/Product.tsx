@@ -76,15 +76,15 @@ const Product: React.FC = () => {
                         </div>
 
                     )}
-                    <div className="flex flex-col h-full text-left font-libre">
-                        <p className="text-lg extrelight">W Merch</p>
+                    <div className="flex flex-col h-full text-left font-robotoCondensed">
+                        <p className="text-lg">W Merch</p>
                         <h1 className="md:text-5xl text-4xl font-bold italic mt-2">{dataMerch?.name}</h1>
-                        <p className="mt-6 text-2xl font-semibold">{`$${Number(dataMerch?.price).toLocaleString("en-US")}`}</p>
-                        <p className="mt-4 text-lg font-light font-libre italic">Impuesto incluído.</p>
+                        <p className="mt-6 text-2xl">{`$${Number(dataMerch?.price).toLocaleString("en-US")}`}</p>
+                        <p className="mt-4 text-lg font-light italic">Impuesto incluído.</p>
                         <div className="hidden md:block mt-auto mb-6">
                             <Link
                                 to={`/checkout/${id}`}
-                                className="bg-white font-normal text-lg text-black flex max-w-full text-center justify-center rounded-full p-4 hover:border hover:border-white hover:text-white hover:bg-black">
+                                className="bg-white font-robotoCondensed text-lg text-black flex max-w-full text-center justify-center rounded-full p-4 hover:border hover:border-white hover:text-white hover:bg-black">
                                 C O M P R A R &nbsp;  A H O R A
                             </Link>
                         </div>

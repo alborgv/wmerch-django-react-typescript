@@ -14,14 +14,7 @@ export default {
   				'Libre Franklin"',
   				'sans-serif'
   			],
-  			bebas: [
-  				'Bebas Neue"',
-                    ...fontFamily.sans
-                ],
-  			anton: [
-  				'Anton"',
-                    ...fontFamily.sans
-                ]
+			robotoCondensed: ['"Roboto Condense"', "sans-serif"]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
