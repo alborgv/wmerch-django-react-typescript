@@ -3,7 +3,7 @@ import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import horizontalBanner from "../../assets/banner_beige_horizontal_3024x.jpg";
+import horizontalBanner from "../../assets/portada_420_horizontal_3024x.jpg";
 
 const Message: React.FC = () => {
   const navigate = useNavigate();
@@ -18,7 +18,6 @@ const Message: React.FC = () => {
 
   return (
     <div className="relative min-h-screen bg-neutral-900 text-white flex items-center justify-center overflow-hidden px-6">
-      {/* Fondo animado con blur */}
       <motion.img
         src={horizontalBanner}
         alt="Banner de fondo"
@@ -33,7 +32,6 @@ const Message: React.FC = () => {
         className="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm z-0"
       />
 
-      {/* Contenido principal */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -60,7 +58,6 @@ const Message: React.FC = () => {
           Gracias por tu compra. Puedes regresar al inicio.
         </p>
 
-        {/* Botón o Loader según estado */}
         {isLoading ? (
           <motion.div
             className="w-6 h-6 border-2 border-t-transparent border-green-400 rounded-full mx-auto animate-spin"
@@ -79,7 +76,6 @@ const Message: React.FC = () => {
           </motion.button>
         )}
 
-        {/* Detalles decorativos */}
         <div className="absolute -top-5 -right-5 w-20 h-20 bg-green-500 opacity-10 rotate-45 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-green-500 opacity-10 rotate-12 rounded-full blur-2xl" />
       </motion.div>

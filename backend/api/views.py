@@ -46,8 +46,8 @@ class CreateCheckOutSession(APIView):
                 ],
                 metadata={"product_id": product.id},
                 mode='payment',
-                success_url=settings.SITE_URL + 'success',
-                cancel_url=settings.SITE_URL + 'canceled',
+                success_url=API_URL + '/success',
+                cancel_url=API_URL + '/',
                 customer_creation='always',
                 customer_email=None, 
                 phone_number_collection={

@@ -28,9 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "").split(",")
 
-
-SITE_URL='http://localhost:5173/'
-
 # Application definition
 
 INSTALLED_APPS = [
