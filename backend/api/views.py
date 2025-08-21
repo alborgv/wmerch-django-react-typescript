@@ -28,9 +28,8 @@ class CreateCheckOutSession(APIView):
 
         try:
             product = Merch.objects.get(id=prod_id)
-            
-            first_image = product.images.first()
-            image_url = f"{API_URL}{first_image}"
+            first_image = product.images.first().image
+            image_url = f"{API_URL}/{first_image}"
             checkout_session = stripe.checkout.Session.create(
                 line_items=[
                     {

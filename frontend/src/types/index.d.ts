@@ -51,5 +51,6 @@ declare global {
         getAllMerch: () => Promise<any>;
         sendContact: (formData: ContactFormProps) => Promise<any>;
         sendSubscription: (formData: SubscriptionProps) => Promise<any>;
+        checkoutSession: (prod_id: string) => Promise<any>;
     }
 }
