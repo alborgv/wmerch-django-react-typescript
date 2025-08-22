@@ -69,13 +69,11 @@ export const MerchProvider: React.FC<ChildrenProps> = ({ children }) => {
     }
 
     const checkoutSession = async (prod_id: string) => {
-        console.log("CHECK")
         const response = await fetch(`${urlBackend}/api/create-checkout-session/`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ prod_id }),
         })
-        console.log("RESPONSE:", response)
         if (!response.ok) {
             const text = await response.text();
             console.error("Respuesta inesperada:", text);
@@ -83,7 +81,7 @@ export const MerchProvider: React.FC<ChildrenProps> = ({ children }) => {
         }
 
         const data = await response.json();
-        console.log("DATA:", data)
+        
         if (data.url) {
             window.location.href = data.url;
         } else {
