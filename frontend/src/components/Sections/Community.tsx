@@ -11,7 +11,7 @@ const Community: React.FC = () => {
         <motion.img
           src={imgRight}
           alt="Community Right"
-          className="w-64 md:w-80 border border-neutral-400 border-r-1 shadow-xl relative z-10 left-20 md:left-5"
+          className="w-64 md:w-72 border border-neutral-400 border-r-1 shadow-xl relative z-10 left-20 md:left-5"
           initial={{ x: -30, opacity: 0.2 }}
           whileInView={{ x: 120, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
@@ -20,7 +20,7 @@ const Community: React.FC = () => {
         <motion.img
           src={imgLeft}
           alt="Community Left"
-          className="w-64 md:w-80 border border-neutral-400 border-r-1 shadow-xl relative z-10
+          className="w-64 md:w-72 border border-neutral-400 border-r-1 shadow-xl relative z-10
                     left-[0%] -translate-x-1/2 top-[20%] -translate-y-1/2*
                     md:left-[35%] md:top-[15%] md:-translate-x-1/2 md:-translate-y-1/2"
           initial={{ x: -10, opacity: 0.2 }}
@@ -31,7 +31,7 @@ const Community: React.FC = () => {
 
       <div className="w-full md:w-5/12 flex justify-center items-center text-center md:text-right mt-8 md:mt-0">
         <motion.h2 
-          initial={{ y: 80, opacity: 0.2 }}
+          initial={{ y: 70, opacity: 0.2 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="text-5xl md:text-4xl font-robotoCondensed font-bold italic">
