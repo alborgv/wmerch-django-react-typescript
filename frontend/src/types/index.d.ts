@@ -46,6 +46,11 @@ declare global {
         message: string;
     }
 
+    interface FloatingButtonProps {
+        phoneNumber: string;
+        message: string;
+    }
+
     interface MerchType {
         getMerch: (id: string) => Promise<any>;
         getAllMerch: () => Promise<any>;
