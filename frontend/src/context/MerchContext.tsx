@@ -13,6 +13,7 @@ export const useMerchContext = (): MerchType => {
 
 export const MerchProvider: React.FC<ChildrenProps> = ({ children }) => {
     const urlBackend = import.meta.env.VITE_URL_BACKEND;
+    console.log("URL:", urlBackend)
 
     const getMerch = async (id: string) => {
         const response = await fetch(`${urlBackend}/api/merch/${id}`);

@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // menú mobile
+  const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredItems, setFilteredItems] = useState<any[]>([]);
   const searchBarRef = useRef<HTMLDivElement>(null);
@@ -137,7 +137,6 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Botón menú móvil */}
           <button
             className="md:hidden text-white"
             onClick={() => setIsOpen((prev) => !prev)}
@@ -147,7 +146,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Menú mobile con fondo animado */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
