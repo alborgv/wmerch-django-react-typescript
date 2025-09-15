@@ -1,7 +1,7 @@
 const TermsOfUseText = () => {
     return (
-        <div className="bg-black text-white px-56 md:px-72 font-libre">
-            <div className="">
+        <div className="bg-black text-white text-justify px-4 sm:px-8 md:px-16 lg:px-32 xl:px-56 font-libre">
+            <div className="max-w-4xl mx-auto">
 
                 <h1 className="text-center text-2xl md:text-3xl font-bold italic mt-6 mb-10">
                     TÉRMINOS DE USO DE WESTCOL MERCH
