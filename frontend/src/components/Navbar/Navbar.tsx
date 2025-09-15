@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
+  const urlBackend = import.meta.env.VITE_URL_BACKEND;
+
+  console.log("URL:", urlBackend)
   const [isVisible, setIsVisible] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
